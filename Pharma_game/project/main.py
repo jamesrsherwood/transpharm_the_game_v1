@@ -497,14 +497,20 @@ class Game:
 			pygame.display.update()
 			await asyncio.sleep(0)  # Yield control to browser
 
-if __name__ == '__main__':
+# Pygbag entry point - must be named 'main' and be async
+async def main():
 	import asyncio
 	print("=== Starting Application ===")
 	try:
 		game = Game()
 		print("=== Starting Game Loop ===")
-		asyncio.run(game.run())
+		await game.run()
 	except Exception as e:
 		print(f"ERROR: {type(e).__name__}: {e}")
 		import traceback
 		traceback.print_exc()
+
+# For local testing
+if __name__ == '__main__':
+	import asyncio
+	asyncio.run(main())
