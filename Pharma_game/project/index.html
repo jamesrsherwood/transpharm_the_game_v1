@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Pharmaceuticals Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #pygbag {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        canvas {
+            border: 2px solid #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        #loading {
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+        .info {
+            color: #aaa;
+            font-size: 14px;
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pygbag">
+        <div id="loading">Loading Sustainable Pharmaceuticals Game...</div>
+        <div class="info">
+            <h2 style="color: #4a9eff;">Sustainable Pharmaceuticals</h2>
+            <p>An educational game about pharmaceutical sustainability and environmental impact.</p>
+        </div>
+    </div>
+    <script src="pygbag.js" type="module"></script>
+</body>
+</html>
