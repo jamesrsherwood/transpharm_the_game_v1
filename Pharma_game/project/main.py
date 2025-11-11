@@ -1,3 +1,5 @@
+print("MAIN.PY: Module loading started")
+
 from settings import *
 from game_data import *
 from pytmx.util_pygame import load_pygame #import tmx files into pygame
@@ -11,10 +13,12 @@ from dialog import DialogTree, MapTitleSprite
 from monster_index import MonsterIndex
 from battle import Battle
 from title_screen import TitleScreen, ControlsScreen, CreditsScreen
- 
+
 from support import *
 from monster import Monster
 from calculations import calculate_city_scale_indicators, pollution_limit_harsh
+
+print("MAIN.PY: All imports successful")
 
 # Map titles for non-world maps
 MAP_TITLES = {
