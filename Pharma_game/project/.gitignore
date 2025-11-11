@@ -1,7 +1,8 @@
 # Build directories
 code/
-build/
 __pycache__/
+
+# Note: We're including build/ for GitHub Pages deployment
 
 # Python
 *.pyc
